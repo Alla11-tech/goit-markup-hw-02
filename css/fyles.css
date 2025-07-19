@@ -58,23 +58,10 @@ a {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header {
-  box-shadow: none;
-  padding: 24px 0;
 }
 
 .header-container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -93,11 +80,9 @@ a {
 }
 
 .nav-list {
-  padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 40px;
 }
 
 .nav-link {
@@ -119,11 +104,9 @@ a {
 }
 
 .address-list {
-  padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 40px;
 }
 
 .address-link {
@@ -177,7 +160,6 @@ a {
 .visually-hidden {
   margin: -1px;
   border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -185,7 +167,6 @@ a {
 }
 
 .features-list {
-  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -209,6 +190,8 @@ a {
 /* Team section styles */
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -222,13 +205,32 @@ a {
 }
 
 .team-list {
-  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   list-style: none;
 }
 
-.team-card-content {
+.team-item {
+  background-color: #ffffff;
   text-align: center;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 32px 0 8px;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0 0 32px;
 }
 
 /* Portfolio-section */
@@ -249,10 +251,7 @@ a {
 }
 
 .portfolio-list {
-  display: flex;
   flex-direction: column;
-  gap: 48px;
-  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -260,7 +259,6 @@ a {
 .portfolio-item {
   background-color: #fff;
   border: 1px solid #e7e9fc;
-  border-radius: 0 0 4px 4px;
   overflow: hidden;
   width: 100%;
 }
@@ -272,7 +270,6 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin: 0 0 8px 0;
-  padding: 32px 16px 0;
 }
 
 .portfolio-project-type {
@@ -281,7 +278,6 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
   margin: 0;
-  padding: 0 16px 32px;
 }
 
 /* Footer styles */
